@@ -143,6 +143,8 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@conda-forge/openlineage-python](https://github.com/conda-forge/openlineage-python/)
+* [@conda-forge/openlineage-sql](https://github.com/conda-forge/openlineage-sql/)
 * [@millsks](https://github.com/millsks/)
 * [@rxm7706](https://github.com/rxm7706/)
 
