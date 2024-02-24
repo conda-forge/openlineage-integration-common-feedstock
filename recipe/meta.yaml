@@ -43,3 +43,5 @@ extra:
   recipe-maintainers:
     - rxm7706
     - millsks
+    - conda-forge/openlineage-sql
+    - conda-forge/openlineage-python
