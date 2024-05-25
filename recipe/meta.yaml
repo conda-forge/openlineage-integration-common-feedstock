@@ -1,5 +1,5 @@
 {% set name = "openlineage-integration-common" %}
-{% set version = "1.14.0" %}
+{% set version = "1.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/openlineage-integration-common-{{ version }}.tar.gz
-  sha256: 014d2a95dc524abd1f7b6427067693874f1feb7677c1c7daf00a4d1c8af59f4e
+  sha256: e71808fa651b708496add56ae79454aaead21e5d2a9a9242df50e5f765b94bb0
 
 build:
   noarch: python
