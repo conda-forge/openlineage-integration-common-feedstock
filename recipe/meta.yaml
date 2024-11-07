@@ -1,5 +1,6 @@
 {% set name = "openlineage-integration-common" %}
 {% set version = "1.24.2" %}
+{% set python_min = python_min|default("3.9") %}
 
 package:
   name: {{ name|lower }}
@@ -16,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - attrs >=19.3.0
     - openlineage-python =={{ version }}
     - openlineage-sql =={{ version }}
@@ -32,6 +33,7 @@ test:
   commands:
     - pip check
   requires:
+    - python ={{ python_min }}
     - pip
 
 about:
