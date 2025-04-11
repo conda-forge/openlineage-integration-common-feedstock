@@ -147,7 +147,3 @@ Feedstock Maintainers
 * [@conda-forge/openlineage-sql](https://github.com/orgs/conda-forge/teams/openlineage-sql/)
 * [@millsks](https://github.com/millsks/)
 * [@rxm7706](https://github.com/rxm7706/)
-
-
-<!-- dummy commit to enable rerendering -->
-
