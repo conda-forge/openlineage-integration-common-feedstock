@@ -1,5 +1,5 @@
 {% set name = "openlineage-integration-common" %}
-{% set version = "1.33.0" %}
+{% set version = "1.34.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 48c41272a2cb014b2eb80c427a601c6a51a25b96cbd9cc699d9f0b86f0fef6a8
+  sha256: 00ebcb1de887cc6ac6841183ca4dc0ec8ba845da80a6d34dc618cbb93c40cef6
 
 build:
   noarch: python
@@ -23,111 +23,8 @@ requirements:
   run:
     - python >={{ python_min }}
     - attrs >=19.3.0
-    - openlineage-python ==1.33.0
-    - openlineage-sql ==1.33.0
-    # - types-python-dateutil 
-    # - types-PyYAML 
-    # - sqlalchemy <2.0.0,>=1.3.24
-    # - pyyaml >=5.3.1
-    # - python-dateutil 
-    # - pytest-mock 
-    # - pytest-cov 
-    # - pytest 
-    # - pandas 
-    # - mypy >=0.960
-    # - mock 
-    # - jinja2 
-    # - great-expectations <0.15.35,>=0.13.26
-    # - google-crc32c >=1.1.2
-    # - google-cloud-core >=1.6.0
-    # - google-cloud-bigquery <4.0.0,>=2.15.0
-    # - google-auth >=1.30.0
-    # - google-api-core >=1.26.3
-    # - dbt-core >=0.20.0
-    # - boto3 >=1.15.0
-    # - types-python-dateutil 
-    # - types-PyYAML 
-    # - sqlalchemy <2.0.0,>=1.3.24
-    # - pyyaml >=5.3.1
-    # - python-dateutil 
-    # - pytest-mock 
-    # - pytest-cov 
-    # - pytest 
-    # - pandas 
-    # - mypy >=0.960
-    # - mock 
-    # - jinja2 
-    # - great-expectations <0.15.35,>=0.13.26
-    # - google-crc32c >=1.1.2
-    # - google-cloud-core >=1.6.0
-    # - google-cloud-bigquery <4.0.0,>=2.15.0
-    # - google-auth >=1.30.0
-    # - google-api-core >=1.26.3
-    # - dbt-core >=0.20.0
-    # - boto3 >=1.15.0
-    # - types-python-dateutil 
-    # - types-PyYAML 
-    # - sqlalchemy <2.0.0,>=1.3.24
-    # - pyyaml >=5.3.1
-    # - python-dateutil 
-    # - pytest-mock 
-    # - pytest-cov 
-    # - pytest 
-    # - pandas 
-    # - openlineage_sql ==1.32.0
-    # - mypy >=0.960
-    # - mock 
-    # - jinja2 
-    # - great_expectations <0.15.35,>=0.13.26
-    # - google-crc32c >=1.1.2
-    # - google-cloud-core >=1.6.0
-    # - google-cloud-bigquery <4.0.0,>=2.15.0
-    # - google-auth >=1.30.0
-    # - google-api-core >=1.26.3
-    # - dbt-core >=0.20.0
-    # - boto3 >=1.15.0
-    # - types-python-dateutil 
-    # - types-PyYAML 
-    # - sqlalchemy <2.0.0,>=1.3.24
-    # - pyyaml >=5.3.1
-    # - python-dateutil 
-    # - pytest-mock 
-    # - pytest-cov 
-    # - pytest 
-    # - pandas 
-    # - openlineage_sql ==1.32.1
-    # - mypy >=0.960
-    # - mock 
-    # - jinja2 
-    # - great_expectations <0.15.35,>=0.13.26
-    # - google-crc32c >=1.1.2
-    # - google-cloud-core >=1.6.0
-    # - google-cloud-bigquery <4.0.0,>=2.15.0
-    # - google-auth >=1.30.0
-    # - google-api-core >=1.26.3
-    # - dbt-core >=0.20.0
-    # - boto3 >=1.15.0
-    # - types-python-dateutil 
-    # - types-PyYAML 
-    # - sqlalchemy <2.0.0,>=1.3.24
-    # - pyyaml >=5.3.1
-    # - python-dateutil 
-    # - pytest-mock 
-    # - pytest-cov 
-    # - pytest 
-    # - pandas 
-    # - openlineage_sql ==1.33.0
-    # - mypy >=0.960
-    # - mock 
-    # - jinja2 
-    # - great_expectations <0.15.35,>=0.13.26
-    # - google-crc32c >=1.1.2
-    # - google-cloud-core >=1.6.0
-    # - google-cloud-bigquery <4.0.0,>=2.15.0
-    # - google-auth >=1.30.0
-    # - google-api-core >=1.26.3
-    # - dbt-core >=0.20.0
-    # - boto3 >=1.15.0
+    - openlineage-python =={{ version }}
+    - openlineage-sql =={{ version }}
 
 test:
   imports:
