@@ -1,5 +1,5 @@
-About openlineage-sql-feedstock
-===============================
+About openlineage-integration-common-feedstock
+==============================================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openlineage-integration-common-feedstock/blob/main/LICENSE.txt)
 
@@ -7,113 +7,17 @@ Home: https://github.com/OpenLineage/OpenLineage
 
 Package license: Apache-2.0
 
-Summary: Python interface for the Rust OpenLineage lineage extraction library
+Summary: OpenLineage common python library for integrations
 
 Current build status
 ====================
 
 
-<table>
-    
-  <tr>
-    <td>Azure</td>
+<table><tr><td>All platforms:</td>
     <td>
-      <details>
-        <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=19892&branchName=main">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openlineage-integration-common-feedstock?branchName=main">
-          </a>
-        </summary>
-        <table>
-          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
-          <tbody><tr>
-              <td>linux_64_python3.10.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=19892&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openlineage-integration-common-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.10.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.11.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=19892&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openlineage-integration-common-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.11.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.12.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=19892&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openlineage-integration-common-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.12.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=19892&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openlineage-integration-common-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.10.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=19892&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openlineage-integration-common-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.10.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.11.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=19892&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openlineage-integration-common-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.11.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.12.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=19892&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openlineage-integration-common-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.12.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=19892&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openlineage-integration-common-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.10.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=19892&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openlineage-integration-common-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.10.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.11.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=19892&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openlineage-integration-common-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.11.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.12.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=19892&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openlineage-integration-common-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.12.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=19892&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openlineage-integration-common-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </details>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=19892&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openlineage-integration-common-feedstock?branchName=main">
+      </a>
     </td>
   </tr>
 </table>
@@ -123,53 +27,53 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-openlineage--sql-green.svg)](https://anaconda.org/conda-forge/openlineage-sql) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/openlineage-sql.svg)](https://anaconda.org/conda-forge/openlineage-sql) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/openlineage-sql.svg)](https://anaconda.org/conda-forge/openlineage-sql) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/openlineage-sql.svg)](https://anaconda.org/conda-forge/openlineage-sql) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-openlineage--integration--common-green.svg)](https://anaconda.org/conda-forge/openlineage-integration-common) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/openlineage-integration-common.svg)](https://anaconda.org/conda-forge/openlineage-integration-common) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/openlineage-integration-common.svg)](https://anaconda.org/conda-forge/openlineage-integration-common) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/openlineage-integration-common.svg)](https://anaconda.org/conda-forge/openlineage-integration-common) |
 
-Installing openlineage-sql
-==========================
+Installing openlineage-integration-common
+=========================================
 
-Installing `openlineage-sql` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `openlineage-integration-common` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `openlineage-sql` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `openlineage-integration-common` can be installed with `conda`:
 
 ```
-conda install openlineage-sql
-```
-
-or with `mamba`:
-
-```
-mamba install openlineage-sql
-```
-
-It is possible to list all of the versions of `openlineage-sql` available on your platform with `conda`:
-
-```
-conda search openlineage-sql --channel conda-forge
+conda install openlineage-integration-common
 ```
 
 or with `mamba`:
 
 ```
-mamba search openlineage-sql --channel conda-forge
+mamba install openlineage-integration-common
+```
+
+It is possible to list all of the versions of `openlineage-integration-common` available on your platform with `conda`:
+
+```
+conda search openlineage-integration-common --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search openlineage-integration-common --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search openlineage-sql --channel conda-forge
+mamba repoquery search openlineage-integration-common --channel conda-forge
 
-# List packages depending on `openlineage-sql`:
-mamba repoquery whoneeds openlineage-sql --channel conda-forge
+# List packages depending on `openlineage-integration-common`:
+mamba repoquery whoneeds openlineage-integration-common --channel conda-forge
 
-# List dependencies of `openlineage-sql`:
-mamba repoquery depends openlineage-sql --channel conda-forge
+# List dependencies of `openlineage-integration-common`:
+mamba repoquery depends openlineage-integration-common --channel conda-forge
 ```
 
 
@@ -214,17 +118,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating openlineage-sql-feedstock
-==================================
+Updating openlineage-integration-common-feedstock
+=================================================
 
-If you would like to improve the openlineage-sql recipe or build a new
+If you would like to improve the openlineage-integration-common recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/openlineage-sql-feedstock are
+Note that all branches in the conda-forge/openlineage-integration-common-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
@@ -239,6 +143,8 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@conda-forge/openlineage-python](https://github.com/orgs/conda-forge/teams/openlineage-python/)
+* [@conda-forge/openlineage-sql](https://github.com/orgs/conda-forge/teams/openlineage-sql/)
 * [@millsks](https://github.com/millsks/)
 * [@rxm7706](https://github.com/rxm7706/)
 
