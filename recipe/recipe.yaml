@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: openlineage-integration-common
-  version: "1.36.0"
+  version: "1.37.0"
   python_min: '3.10'
 
 package:
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/openlineage_integration_common-${{ version }}.tar.gz
-  sha256: 753dc34dff6a4ef60e2525452f52567952c1d21c63b96195acb192d0ba320463
+  sha256: 98079954da288119dedf50c12d420d1c443dbe1d2763e920b85b7d3e2a3796fa
 
 build:
   number: 0
