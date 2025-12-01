@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: openlineage-integration-common
-  version: "1.39.0"
+  version: "1.40.1"
   python_min: '3.10'
 
 package:
@@ -11,19 +11,21 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/openlineage_integration_common-${{ version }}.tar.gz
-  sha256: 31000712d4b7c83c991e27c33b17b8ccc963d6a86d956dbc8a3e1767f3d507ad
+  url: https://github.com/OpenLineage/OpenLineage/archive/refs/tags/${{ version }}.tar.gz
+  sha256: 0e13c85d0cf24ceed4bf1042562edacb66520dda6c710c5a073a2dd8386276e2
 
 build:
   number: 0
   noarch: python
-  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  script:
+    - cd integration/common
+    - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - setuptools
+    - uv-build >=0.9.4,<0.10.0
   run:
     - python >=${{ python_min }},<4.0
     - attrs >=19.3.0
