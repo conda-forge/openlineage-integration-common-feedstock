@@ -1,7 +1,7 @@
 About openlineage-integration-common-feedstock
 ==============================================
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openlineage-integration-common-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/1.40.1-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/OpenLineage/OpenLineage
 
@@ -15,8 +15,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=19892&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openlineage-integration-common-feedstock?branchName=main">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/1.40.1-feedstock?branchName=main">
       </a>
     </td>
   </tr>
