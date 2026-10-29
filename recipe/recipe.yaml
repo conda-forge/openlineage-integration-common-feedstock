@@ -29,8 +29,8 @@ requirements:
     - python >=${{ python_min }},<4.0
     - attrs >=19.3.0
     - jinja2 >=2.11.3
-    - openlineage-python
-    - openlineage-sql >=1.55.0
+    - openlineage-python ==${{ version }}
+    - openlineage-sql ==${{ version }}
     - pyyaml >=5.3.1
 
 tests:
